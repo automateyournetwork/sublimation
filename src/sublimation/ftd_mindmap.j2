@@ -1,0 +1,16 @@
+{%- if "networks" in api %}
+# Network Objects
+{%-     for item in data_to_template['items'] %}
+## {{ item.name }}
+### Description: {{ item.description }}
+### DNS Resolution: {{ item.dnsResolution }}
+### ID: {{ item.id }}
+### Is System Defined: {{ item.isSystemDefined }}
+### Types
+#### Type: {{ item.type }}
+#### Subtype: {{ item.subType }}
+### Value: {{ item.value }}
+### Version: {{ item.version }}
+### [URL]({{ item.links.self }})
+{%-     endfor %}
+{%- endif %}

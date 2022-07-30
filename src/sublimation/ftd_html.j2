@@ -1,0 +1,37 @@
+{%- include 'datatable_header.j2' %}
+{%- if "networks" in api %}
+<h1>Network Objects</h1>
+<table id = "datatable">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>DNS Resolution</th>
+        <th>ID</th>
+        <th>Is System Defined</th>
+        <th>Type</th>
+        <th>Subtype</th>
+        <th>Value</th>
+        <th>Version</th>
+        <th>Link</th>
+    </tr>
+</thead>
+<tbody>
+{%-     for item in data_to_template['items'] %}
+    <tr>
+        <td>{{ item.name }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.dnsResolution }}</td>
+        <td>{{ item.id }}</td>
+        <td>{{ item.isSystemDefined }}</td>
+        <td>{{ item.type }}</td>
+        <td>{{ item.subType }}</td>
+        <td>{{ item.value }}</td>
+        <td>{{ item.version }}</td>
+        <td><a href="{{ item.links.self }}">URL</a></td>
+    </tr>
+{%-     endfor %}
+</tbody>
+</table>
+{%- endif %}
+{%- include 'datatable_footer.j2' %}

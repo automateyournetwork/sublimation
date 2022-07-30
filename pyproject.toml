@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "sublimation"
+version = "0.1.0"
+description = "Business Ready Documents from Cisco Firepower Threat Defense (FTD)"
+authors = ["John Capobianco <ptcapo@gmail.com>"]
+packages = [{ include = "sublimation", from = "src"}]
+readme = "README.md"
+
+[tool.poetry.scripts]
+sublimation = "sublimation.script:run"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.1"
+PyYAML = "^6.0"
+Jinja2 = "^3.1.2"
+rich-click = "^1.5.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

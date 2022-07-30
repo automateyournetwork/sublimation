@@ -1,0 +1,82 @@
+{
+    "items": [
+        {
+            "description": null,
+            "dnsResolution": null,
+            "id": "2c733bb1-9952-11ec-be24-4514b2b84a54",
+            "isSystemDefined": true,
+            "links": {
+                "self": "https://10.10.20.65/api/fdm/latest/object/networks/2c733bb1-9952-11ec-be24-4514b2b84a54"
+            },
+            "name": "IPv4-Private-10.0.0.0-8",
+            "subType": "NETWORK",
+            "type": "networkobject",
+            "value": "10.0.0.0/8",
+            "version": "ghsg2fmzp6qsm"
+        },
+        {
+            "description": null,
+            "dnsResolution": null,
+            "id": "2c7a67a2-9952-11ec-be24-bddea998f5fb",
+            "isSystemDefined": true,
+            "links": {
+                "self": "https://10.10.20.65/api/fdm/latest/object/networks/2c7a67a2-9952-11ec-be24-bddea998f5fb"
+            },
+            "name": "IPv4-Private-172.16.0.0-12",
+            "subType": "NETWORK",
+            "type": "networkobject",
+            "value": "172.16.0.0/12",
+            "version": "ia6nmuk4ucty2"
+        },
+        {
+            "description": null,
+            "dnsResolution": null,
+            "id": "2c82f323-9952-11ec-be24-2171b28ef6af",
+            "isSystemDefined": true,
+            "links": {
+                "self": "https://10.10.20.65/api/fdm/latest/object/networks/2c82f323-9952-11ec-be24-2171b28ef6af"
+            },
+            "name": "IPv4-Private-192.168.0.0-16",
+            "subType": "NETWORK",
+            "type": "networkobject",
+            "value": "192.168.0.0/16",
+            "version": "j4qby5n2wu5vd"
+        },
+        {
+            "description": null,
+            "dnsResolution": null,
+            "id": "2c4e277f-9952-11ec-be24-73e40c8e7307",
+            "isSystemDefined": true,
+            "links": {
+                "self": "https://10.10.20.65/api/fdm/latest/object/networks/2c4e277f-9952-11ec-be24-73e40c8e7307"
+            },
+            "name": "any-ipv4",
+            "subType": "NETWORK",
+            "type": "networkobject",
+            "value": "0.0.0.0/0",
+            "version": "joj2ekbeoqpsi"
+        },
+        {
+            "description": null,
+            "dnsResolution": null,
+            "id": "2c6b7380-9952-11ec-be24-49cc01296f3d",
+            "isSystemDefined": true,
+            "links": {
+                "self": "https://10.10.20.65/api/fdm/latest/object/networks/2c6b7380-9952-11ec-be24-49cc01296f3d"
+            },
+            "name": "any-ipv6",
+            "subType": "NETWORK",
+            "type": "networkobject",
+            "value": "::/0",
+            "version": "pyruq4i2qvjbs"
+        }
+    ],
+    "paging": {
+        "count": 5,
+        "limit": 10,
+        "next": [],
+        "offset": 0,
+        "pages": 0,
+        "prev": []
+    }
+}

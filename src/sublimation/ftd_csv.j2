@@ -1,0 +1,5 @@
+{%- if "networks" in api %}Name,Description,DNS Resolution,ID,Is System Defined,Type,Subtype,Value,Version,Link
+{%-     for item in data_to_template['items'] %}
+{{ item.name }},{{ item.description }},{{ item.dnsResolution }},{{ item.id }},{{ item.isSystemDefined }},{{ item.type }},{{ item.subType }},{{ item.value }},{{ item.version }},{{ item.links.self }}
+{%-     endfor %}
+{%- endif %}
